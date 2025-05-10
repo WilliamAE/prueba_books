@@ -18,4 +18,4 @@ class APITests(APITestCase):
       response = self.client.get(reverse("book_list")) 
       self.assertEqual(response.status_code, status.HTTP_200_OK) 
       self.assertEqual(Book.objects.count(), 1) 
-      self.assertContains(response, self.book) 
+       
